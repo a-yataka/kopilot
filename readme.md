@@ -2,4 +2,6 @@ npm init electron-app@latest ts_webpack_electron -- --template=webpack-typescrip
 
 > npm install -D iconv-lite
 
-npm install -D bootstrap
+npm install bootstrap @popperjs/core
+
+ npm install -D autoprefixer css-loader postcss-loader sass sass-loader style-loader

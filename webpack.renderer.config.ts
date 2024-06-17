@@ -6,8 +6,11 @@ import { plugins } from './webpack.plugins';
 rules.push({
   test: /\.css$/,
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
-},
-{
+},{
+  test: /\.scss$/,
+  // compiles Sass to CSS
+  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+},{
   // 画像やフォントなどのアセット類
   // test: /\.(ico|png|svg|eot|woff?2?)$/,
   test: /\.(ico|png|svg|jpg)$/,
