@@ -29,24 +29,24 @@ const config: ForgeConfig = {
         entryPoints: [
           {
             html: './src/index.html',
-            js: './src/renderer.ts',
-            name: 'main_window',
+            js: './src/renderer.ts', // MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
+            name: 'main_window', // MAIN_WINDOW_WEBPACK_ENTRY
             preload: {
               js: './src/preload.ts',
             },
           }, {
             html: './src/alerm.html',
-            js: './src/renderer.ts',
+            js: './src/alerm_renderer.ts',
             name: 'alerm_window',
             preload: {
-              js: './src/preload.ts',
+              js: './src/alerm_preload.ts',
             },
           }, {
             html: './src/ai.html',
-            js: './src/renderer.ts',
+            js: './src/ai_renderer.ts',
             name: 'ai_window',
             preload: {
-              js: './src/preload.ts',
+              js: './src/ai_preload.ts',
             },
           },
         ],

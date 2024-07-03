@@ -9,3 +9,9 @@ npm install bootstrap @popperjs/core
 
 divだとよくわからないスタイルが適用される？
 spanにしたらうまくいった
+
+node-wav-player
+使う、windowsではpowershellのNew-Object System.Media.SoundPlayerを使っている。
+そのためwavしか再生できない。
+
+npm install openai

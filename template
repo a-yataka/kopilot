@@ -1,0 +1,28 @@
+- name
+- path
+- prompt
+- voice
+- 
+
+# file 
+# 0800
+# settings.yml
+# ai.wav
+# 1000
+# 1200
+# 1400
+
+ai_settings.yml
+- 0800:
+    path: '保存先のパス'
+    promt: '${1}'
+    voice_endpoints: '声を生成するサーバーを指定。get+クエリしか想定していない'
+
+- 0800:
+    name
+    path
+    promt
+    voice
+    # くそ長くなってうざい？
+
+

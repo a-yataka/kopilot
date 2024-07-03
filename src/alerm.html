@@ -1,34 +1,35 @@
 <html>
     <head>
-        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"> -->
-        <title>Test Window App</title>
+        <title>時報追加</title>
     </head>
     <body>
-        <h1>AI設定</h1>
-        <h2>文章生成</h2>
+        <h1>時報追加</h1>
+        <h2>定型時報</h2>
             <form>
-                <label for="api">api</label>
-                <input type="text">
-                <label for="prompt">prompt</label>
-                <input type="text">
+                <label for="alerm_time">時刻</label>
+                <input type="text" id="alerm_time">
+                <label for="alerm_name">名前</label>
+                <input type="text" id="alerm_name">
+                <label for="alerm_wav_path">ファイルパス</label>
+                <input type="text" id="alerm_wav_path">
+                <!-- フォームから指定すると時刻ファイルにコピーを入れる？ -->
             </form>
-            ${}でアプリケーション出力を埋め込み
-        <h2>アプリケーション</h2>
+        <h2>AI時報</h2>
             <form>
-                <label for="val">変数名</label>
-                <input type="text">
-                <label for="exec">実行コマンド</label>
-                <input type="text">
+                <label for="alerm_ai_time">時刻</label>
+                <input type="text" id="alerm_ai_time">
+                <label for="alerm_name">名前</label>
+                <input type="text" id="alerm_ai_name">
+                <label for="alerm_ai_path">ファイルパス</label>
+                <input type="text" id="alerm_ai_path">
+                <label for="alerm_ai_prompt">プロンプト</label>
+                <input type="text" id="alerm_ai_prompt">
+                <label for="alerm_ai_voice">voice api</label>
+                <input type="text" id="alerm_ai_voice">
+                <label for="alerm_ai_chat">chat api</label>
+                <input type="text" id="alerm_ai_chat">
             </form>
-            追加
-        <h2>音声</h2>
-            <form>
-                <label for="api">api</label>
-                <input type="text">
-                <label for="voice">出力ファイルパス</label>
-                <input type="text">
-            </form>
-            <button onclick="a()">追加</button>
+        <button onclick="add()">追加</button>
     </body>
 </html>
 
