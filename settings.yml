@@ -1,0 +1,25 @@
+boot:
+  voice: aaa
+  promt: aaa
+schedule:
+  - time: 0800
+    name: good morning # これそのままファイル名に使う、時刻フォルダに入れる
+    voice: aa
+    prompt: aaa
+    notice: false
+  - time: 1000
+    name: start
+    voice: aa
+    prompt: aaa
+    notice: false
+  - time: 1000
+    name: start01
+    voice: aa
+    prompt: aaa
+    notice: false
+  - time: 1200
+    name: aa
+    voice: aa
+    prompt: aaa
+    notice: false
+
